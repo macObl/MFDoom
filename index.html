@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;600&family=Sen:wght@400;600&display=swap" rel="stylesheet">
+    <title>DOOMZ MAZE</title>
+</head>
+<body>
+    <audio id="MF1" src="/assets/audio/All Caps.mp3" loop></audio>
+    <audio id="MF2" src="/assets/audio/Figaro.mp3" loop></audio>
+    <audio id="MF3" src="/assets/audio/Meat Grinder.mp3" loop></audio>
+    <audio id="MF4" src="/assets/audio/Doomsday.mp3" loop></audio>
+    <audio id="MF5" src="/assets/audio/One Beer.mp3" loop></audio>
+    <audio id="MF6" src="/assets/audio/Rapp Snitch Knishes.mp3" loop></audio>
+
+    
+    <img id="texture" src="assets/wall.png" style="display: none">
+    <img id="background" src="assets/background.png" style="display: none">
+    <img id="floor-texture" src="assets/floor.png" style="display: none;">
+
+    <div class="canvas-div">
+        <canvas id="canvas"></canvas>
+        <div id="display"></div>
+        <div>
+            <p>(W)-Forawrd / (S)-Backwards / (A)-Left / (D)-Right </p>
+            <button onclick="play()" type="button" id="demo">Play</button>
+        </div>
+
+    </div>
+    <script src="doom.js"></script>
+</body>
+</html>
